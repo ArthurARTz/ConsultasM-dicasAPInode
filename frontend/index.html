@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – Clínica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Consultas & Relatórios</h1>
+
+    <div class="buttons">
+      <button onclick="carregar('/pacientes/multiespecialidades')">Pacientes multiespecialidades</button>
+      <button onclick="carregar('/medicos/mais-atendimentos?mes=10&ano=2024')">Médicos + atendimentos</button>
+      <button onclick="carregar('/consultas/convenio/Unimed')">Consultas por convênio</button>
+      <button onclick="carregar('/pacientes/uma-consulta')">Pacientes com 1 consulta</button>
+      <button onclick="carregar('/faturamento/especialidades')">Faturamento por especialidade</button>
+      <button onclick="carregar('/medicos/sem-consultas?inicio=2024-10-01&fim=2024-10-31')">Médicos sem consultas</button>
+      <button onclick="carregar('/pacientes/multimedicos')">Pacientes com vários médicos</button>
+      <button onclick="carregar('/faturamento/convenios')">Faturamento por convênio</button>
+      <button onclick="carregar('/consultas/ultimos30dias')">Consultas últimos 30 dias</button>
+      <button onclick="carregar('/consultas/media')">Média de consultas</button>
+    </div>
+
+    <div class="card">
+      <table>
+        <thead id="thead"></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
