@@ -20,18 +20,7 @@ CSS3
 
 JavaScript
 
-📂 Estrutura do Projeto
-backend/
-   ├── db.js
-   ├── server.js
 
-frontend/
-   ├── index.html
-   ├── style.css
-   └── script.js
-
-sql/
-   └── Scripts.sql
 
 🧠 Funcionalidades
 
